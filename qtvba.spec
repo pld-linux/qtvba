@@ -33,7 +33,9 @@ ekranu z GBA.
 export QTDIR=%{_usr}
 export QMAKESPEC=%{_datadir}/qt/mkspecs/linux-g++/
 qmake qtvba.pro
-%{__make}
+%{__make} \
+	CXX="%{__cxx}" \
+	CXXFLAGS="%{rpmcflags} -pipe -Wall -D_REENTRANT  -DQT_NO_DEBUG -DQT_THREAD_SUPPORT"
 
 %install
 rm -rf $RPM_BUILD_ROOT
