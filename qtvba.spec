@@ -20,14 +20,14 @@ played recording, a built in ROM renamer, and compatibility with
 GBA-Shell's screenshot formats and indexing.
 
 %description -l pl
-QTVBA to napisana w C++ i korzystaj±ca z QT graficzna nak³adka na 
+QTVBA to napisana w C++ i korzystaj±ca z QT graficzna nak³adka na
 emulator GameBoy Advance firmy Nintendo - VisualBoyAdvance. Aktualnie
 obs³uguje zapisywanie gry, zmiany nazw ROM-ów z poziomu apliakcji,
 zapisywanie liczby i daty gier oraz format i indeksowanie zrzutów
 ekranu z GBA.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 export QTDIR=%{_usr}
