@@ -1,17 +1,16 @@
-Name:		qtvba
 Summary:	QT based frontend to VisualBoyAdvance
 Summary(pl):	Nak³adka na VisualBoyAdvance napisana pod QT
+Name:		qtvba
 Version:	0.2
 Release:	1
+License:	GPL
+Group:		Applications
 Source0:	http://www.apex.net.au/~twalker/qtvba/%{name}-%{version}.tar.gz
 # Source0-md5:	16837d77d0f0e02c10fe60d509ed252f
 URL:		http://www.apex.net.au/~twalker/qtvba/
-Group:		Applications
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-License:	GPL
 BuildRequires:	qt-devel
-Requires:	qt
 Requires:	VisualBoyAdvance
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 QTVBA is a Qt 3.x and C++-based graphical frontend to the
@@ -22,12 +21,12 @@ GBA-Shell's screenshot formats and indexing.
 
 %description -l pl
 QTVBA to napisana w C++ i korzystaj±ca z QT graficzna nak³adka na 
-emulator GameBoy Advance (C) Nintendo - VisualBoyAdvance. Aktualnie obs³uguje
-zapisywanie gry, zmiany nazw ROMów z poziomu apliakcji, zapisywanie d³ugo¶æ i
-daty gier oraz format i indeksowanie zrzutów ekranu z GBA.
+emulator GameBoy Advance firmy Nintendo - VisualBoyAdvance. Aktualnie
+obs³uguje zapisywanie gry, zmiany nazw ROM-ów z poziomu apliakcji,
+zapisywanie liczby i daty gier oraz format i indeksowanie zrzutów
+ekranu z GBA.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
 %setup -q 
 
 %build
@@ -39,7 +38,8 @@ qmake qtvba.pro
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install qtvba  $RPM_BUILD_ROOT%{_bindir}/
+
+install qtvba $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
