@@ -4,7 +4,7 @@ Summary(pl):	Nak³adka na VisualBoyAdvance napisana pod QT
 Version:	0.2
 Release:	1
 Source0:	http://www.apex.net.au/~twalker/qtvba/%{name}-%{version}.tar.gz
-# Source0-md5:	9f61cb15f10c751f6215f5ab5b14e451
+# Source0-md5:	16837d77d0f0e02c10fe60d509ed252f
 URL:		http://www.apex.net.au/~twalker/qtvba/
 Group:		Applications
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
