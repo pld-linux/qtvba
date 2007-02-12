@@ -1,5 +1,5 @@
 Summary:	Qt based frontend to VisualBoyAdvance
-Summary(pl):	Nak≥adka na VisualBoyAdvance napisana pod Qt
+Summary(pl.UTF-8):   Nak≈Çadka na VisualBoyAdvance napisana pod Qt
 Name:		qtvba
 Version:	0.2
 Release:	1
@@ -19,11 +19,11 @@ dual screenshot handling, save game information, number and last date
 played recording, a built in ROM renamer, and compatibility with
 GBA-Shell's screenshot formats and indexing.
 
-%description -l pl
-QTVBA to napisana w C++ i korzystaj±ca z Qt graficzna nak≥adka na
+%description -l pl.UTF-8
+QTVBA to napisana w C++ i korzystajƒÖca z Qt graficzna nak≈Çadka na
 emulator GameBoy Advance firmy Nintendo - VisualBoyAdvance. Aktualnie
-obs≥uguje zapisywanie gry, zmiany nazw ROM-Ûw z poziomu apliakcji,
-zapisywanie liczby i daty gier oraz format i indeksowanie zrzutÛw
+obs≈Çuguje zapisywanie gry, zmiany nazw ROM-√≥w z poziomu apliakcji,
+zapisywanie liczby i daty gier oraz format i indeksowanie zrzut√≥w
 ekranu z GBA.
 
 %prep
