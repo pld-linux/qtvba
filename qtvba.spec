@@ -1,5 +1,5 @@
 Summary:	Qt based frontend to VisualBoyAdvance
-Summary(pl.UTF-8):   Nakładka na VisualBoyAdvance napisana pod Qt
+Summary(pl.UTF-8):	Nakładka na VisualBoyAdvance napisana pod Qt
 Name:		qtvba
 Version:	0.2
 Release:	1
